@@ -1,0 +1,65 @@
+{
+  "paints": [
+    {
+      "name": "Sevilha",
+      "dimension": "60x50",
+      "price": 250,
+      "img": "../Images/Sevilha.jpeg"
+    },
+    {
+      "name": "Caminhos Cruzados",
+      "dimension": "60x40",
+      "price": 200,
+      "img": "../Images/CaminhosCruzados.jpeg"
+    },
+    {
+      "name": "Explosão De Sabores",
+      "dimension": "70x50",
+      "price": 250,
+      "img": "../Images/ExplosaoDeSabores.jpeg"
+    },
+    {
+      "name": "Urbano I",
+      "dimension": "120x120",
+      "price": 380,
+      "img": "../Images/UrbanoI.jpeg"
+    },
+    {
+      "name": "Equilibrio",
+      "dimension": "60x40",
+      "price": 180,
+      "img": "../Images/Equilibrio.jpeg"
+    },
+    {
+      "name": "Paixão Segundo",
+      "dimension": "60x50",
+      "price": 250,
+      "img": "../Images/PaixaoSegundo.jpeg"
+    },
+    {
+      "name": "Urbano II",
+      "dimension": "120x120",
+      "price": 380,
+      "img": "../Images/UrbanoII.jpeg"
+    },
+
+    {
+      "name": "Liberdade",
+      "dimension": "60x50",
+      "price": 250,
+      "img": "../Images/Liberdade.jpeg"
+    },
+    {
+      "name": "Do Outro Lado",
+      "dimension": "150x60",
+      "price": 300,
+      "img": "../Images/DoOutroLado.jpeg"
+    },
+    {
+      "name": "As Cataratas",
+      "dimension": "100x25",
+      "price": 200,
+      "img": "../Images/AsCataratas.jpeg"
+    }
+  ]
+}

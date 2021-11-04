@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <script defer src="../js/navbar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/">Casa dos Neves</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="./paintings.html"> <span>Quadros</span> </a>
+          </li>
+          <li>
+            <a href="./about-me.html"><span>Sobre nós</span></a>
+          </li>
+          <li>
+            <a href="./cart.html"><span>Carrinho</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="about-section">
+      <h1>Sobre nós</h1>
+      <p>A Casa dos Neves nasceu no Porto em 1965.</p>
+      <p>
+        Hoje tem duas lojas no coração da cidade invicta com multimarcas
+        nacionais e internacionais para homem e senhora.
+      </p>
+    </div>
+
+    <h2 style="text-align: center">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="../Images/Afonso.jpg" style="width: 100%" />
+          <div class="container">
+            <h2>Afonso Oliveira</h2>
+            <p class="title">Developer</p>
+            <p>Sou um matemático.</p>
+            <p>📩 2019.itm.afonsooliveira@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="../Images/Sergio.jpg" style="width: 100%" />
+          <div class="container">
+            <h2>Sérgio Mota</h2>
+            <p class="title">Empressário</p>
+            <p>Sei montar cadeiras, mesas e diversos</p>
+            <p>📩 2019.tsi.sergiomota@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="../Images/Ricardo.jpg" style="width: 100%" />
+          <div class="container">
+            <h2>Ricardo Freitas</h2>
+            <p class="title">Developer</p>
+            <p>Um jovem desenvolvedor 😎</p>
+            <p>📩 2019.itm.ricardofreitas@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="contactos">
+      <div class="main-content">
+        <div class="left box">
+          <h2>Sobre nós</h2>
+          <div class="content">
+            <p>
+              A Casa dos Neves nasceu no Porto em 1965. Hoje tem duas lojas no
+              coração da cidade invicta com multimarcas nacionais e
+              internacionais para homem e senhora.
+            </p>
+            <div class="social">
+              <a href="https://pt-pt.facebook.com/casadosneves.porto"
+                ><span class="fab fa-facebook-f"></span
+              ></a>
+              <a href="https://casadosneves.com/"
+                ><span class="fas fa-globe"></span
+              ></a>
+              <a href="https://www.instagram.com/casadosneves_porto/"
+                ><span class="fab fa-instagram"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Localização</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Portugal, Porto</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">351 222 010 507</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">casadosneves@mail.telepac.pt</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Contacto-nos</h2>
+          <div class="content">
+            <form action="mailto:casadosneves@mail.telepac.pt">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required="" style="color: white" />
+              </div>
+              <div class="msg">
+                <div class="text">Nome *</div>
+                <input type="email" required="" style="color: white" />
+              </div>
+              <div class="msg">
+                <div class="text">Messagem *</div>
+                <input type="email" required="" style="color: white" />
+              </div>
+
+              <div class="btn">
+                <button style="color: white; font-size: large" class="submit">
+                  <spna class="preto">Enviar</spna>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
