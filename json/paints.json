@@ -1,7 +1,7 @@
 {
   "paints": [
     {
-      "name": "Sevilha",
+      "name": "Explosão De Sabores",
       "dimension": "60x50",
       "price": 250,
       "img": "../Images/Sevilha.jpeg"
@@ -13,13 +13,13 @@
       "img": "../Images/CaminhosCruzados.jpeg"
     },
     {
-      "name": "Explosão De Sabores",
+      "name": "Liberdade",
       "dimension": "70x50",
       "price": 250,
       "img": "../Images/ExplosaoDeSabores.jpeg"
     },
     {
-      "name": "Urbano I",
+      "name": "Urbano II",
       "dimension": "120x120",
       "price": 380,
       "img": "../Images/UrbanoI.jpeg"
@@ -37,14 +37,14 @@
       "img": "../Images/PaixaoSegundo.jpeg"
     },
     {
-      "name": "Urbano II",
+      "name": "Urbano I",
       "dimension": "120x120",
       "price": 380,
       "img": "../Images/UrbanoII.jpeg"
     },
 
     {
-      "name": "Liberdade",
+      "name": "Sevilha",
       "dimension": "60x50",
       "price": 250,
       "img": "../Images/Liberdade.jpeg"
