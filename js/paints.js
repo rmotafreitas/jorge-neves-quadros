@@ -1,12 +1,6 @@
-window.onload = async function () {
-  let paints = await fetch("../json/paints.json")
-    .then((response) => response.text())
-    .then((data) => {
-      return data;
-    });
-  paints = JSON.parse(paints);
-  paints = paints.paints;
-
+const { client } = require("./client.js");
+const { paints } = require("../json/paints.json");
+window.onload = function () {
   let str = "";
   let div = document.getElementById("items2");
   for (i = 0; i < paints.length; i++) {
@@ -20,7 +14,7 @@ window.onload = async function () {
   div.innerHTML = str;
 };
 
-function initOnClick(key) {
+global.initOnClick = function (key) {
   $(".alert").addClass("show");
   $(".alert").removeClass("hide");
   $(".alert").addClass("showAlert");
@@ -35,36 +29,7 @@ function initOnClick(key) {
   });
 
   buy(key);
-}
-
-class client {
-  constructor() {
-    if (localStorage.getItem("arrPaints")) {
-      this.arrPaints = JSON.parse(localStorage.getItem("arrPaints"));
-    } else {
-      localStorage.setItem("arrPaints", JSON.stringify([]));
-      this.arrPaints = [];
-    }
-  }
-
-  addPaint(key) {
-    this.arrPaints.push(key);
-    localStorage.setItem("arrPaints", JSON.stringify(this.arrPaints));
-  }
-
-  removePaint(key) {
-    const index = this.arrPaints.indexOf(key.toString());
-    if (index == -1) {
-      return null;
-    }
-    this.arrPaints.splice(index, 1);
-    localStorage.setItem("arrPaints", JSON.stringify(this.arrPaints));
-  }
-
-  getArrPaints() {
-    return (this.arrPaints = JSON.parse(localStorage.getItem("arrPaints")));
-  }
-}
+};
 
 function buy(paint) {
   const cart = new client();

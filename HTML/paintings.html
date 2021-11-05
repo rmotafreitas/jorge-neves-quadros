@@ -1,136 +1,139 @@
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/navbar.css" />
-  <link rel="stylesheet" href="../css/paintings.css" />
-  <link rel="stylesheet" href="../css/notifications.css" />
-  <link rel="stylesheet" href="../css/footer.css" />
-  <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-1.7.1.min.js"
-  ></script>
-  <script src="../js/paints.js"></script>
-  <script defer src="../js/navbar.js"></script>
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-  />
-  <title>Jorge Neves</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/paintings.css" />
+    <link rel="stylesheet" href="../css/notifications.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+    <script src="../js/bundlePaints.js"></script>
+    <script defer src="../js/navbar.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>Jorge Neves</title>
+  </head>
 
-<body>
-  <header>
-    <nav>
-      <a class="logo" href="../index.html">Casa dos Neves</a>
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-list">
-        <li>
-          <a href="./paintings.html"> <span>Quadros</span> </a>
-        </li>
-        <li>
-          <a href="./about-me.html"><span>Sobre nós</span></a>
-        </li>
-        <li>
-          <a href="./cart.html"><span>Carrinho</span></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="about-wrapper">
-    <section class="items">
-      <div class="alert hide" id="notification">
-        <span class="fas fa-cart-plus"></span>
-        <span class="msg">Carrinho: Item adicionado!</span>
-        <div class="close-btn">
-          <span class="fas fa-times"></span>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="../index.html">Casa dos Neves</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-      </div>
-      <h1 style="margin: 25px">Quadros</h1>
-      <div class="row">
-        <div class="col2">
-          <img
-            class="header-img"
-            src="../Images/Background.jpg"
-            alt=""
-            id="particles-js"
-          />
-          <div class="items2" id="items2"></div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <footer id="contactos">
-    <div class="main-content">
-      <div class="left box">
-        <h2>Sobre nós</h2>
-        <div class="content">
-          <p>
-            A Casa dos Neves nasceu no Porto em 1965. Hoje tem duas lojas no
-            coração da cidade invicta com multimarcas nacionais e internacionais
-            para homem e senhora.
-          </p>
-          <div class="social">
-            <a href="https://pt-pt.facebook.com/casadosneves.porto"
-              ><span class="fab fa-facebook-f"></span
-            ></a>
-            <a href="https://casadosneves.com/"
-              ><span class="fas fa-globe"></span
-            ></a>
-            <a href="https://www.instagram.com/casadosneves_porto/"
-              ><span class="fab fa-instagram"></span
-            ></a>
+        <ul class="nav-list">
+          <li>
+            <a href="./paintings.html"> <span>Quadros</span> </a>
+          </li>
+          <li>
+            <a href="./about-me.html"><span>Sobre nós</span></a>
+          </li>
+          <li>
+            <a href="./cart.html"><span>Carrinho</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="about-wrapper">
+      <section class="items">
+        <div class="alert hide" id="notification">
+          <span class="fas fa-cart-plus"></span>
+          <span class="msg">Carrinho: Item adicionado!</span>
+          <div class="close-btn">
+            <span class="fas fa-times"></span>
           </div>
         </div>
-      </div>
-      <div class="center box">
-        <h2>Localização</h2>
-        <div class="content">
-          <div class="place">
-            <span class="fas fa-map-marker-alt"></span>
-            <span class="text">Portugal, Porto</span>
-          </div>
-          <div class="phone">
-            <span class="fas fa-phone-alt"></span>
-            <span class="text">351 222 010 507</span>
-          </div>
-          <div class="email">
-            <span class="fas fa-envelope"></span>
-            <span class="text">casadosneves@mail.telepac.pt</span>
+        <h1 style="margin: 25px">Quadros</h1>
+        <div class="row">
+          <div class="col2">
+            <img
+              class="header-img"
+              src="../Images/Background.jpg"
+              alt=""
+              id="particles-js"
+            />
+            <div class="items2" id="items2"></div>
           </div>
         </div>
-      </div>
-      <div class="right box">
-        <h2>Contacto-nos</h2>
-        <div class="content">
-          <form action="mailto:casadosneves@mail.telepac.pt">
-            <div class="email">
-              <div class="text">Email *</div>
-              <input type="email" required="" style="color: white" />
-            </div>
-            <div class="msg">
-              <div class="text">Nome *</div>
-              <input type="email" required="" style="color: white" />
-            </div>
-            <div class="msg">
-              <div class="text">Messagem *</div>
-              <input type="email" required="" style="color: white" />
-            </div>
-
-            <div class="btn">
-              <button style="color: white; font-size: large" class="submit">
-                <spna class="preto">Enviar</spna>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+      </section>
     </div>
-  </footer>
-</body>
+    <footer id="contactos">
+      <div class="main-content">
+        <div class="left box">
+          <h2>Sobre nós</h2>
+          <div class="content">
+            <p>
+              A Casa dos Neves nasceu no Porto em 1965. Hoje tem duas lojas no
+              coração da cidade invicta com multimarcas nacionais e
+              internacionais para homem e senhora.
+            </p>
+            <div class="social">
+              <a href="https://pt-pt.facebook.com/casadosneves.porto"
+                ><span class="fab fa-facebook-f"></span
+              ></a>
+              <a href="https://casadosneves.com/"
+                ><span class="fas fa-globe"></span
+              ></a>
+              <a href="https://www.instagram.com/casadosneves_porto/"
+                ><span class="fab fa-instagram"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Localização</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Portugal, Porto</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">351 222 010 507</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">casadosneves@mail.telepac.pt</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Contacto-nos</h2>
+          <div class="content">
+            <form action="mailto:casadosneves@mail.telepac.pt">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required="" style="color: white" />
+              </div>
+              <div class="msg">
+                <div class="text">Nome *</div>
+                <input type="email" required="" style="color: white" />
+              </div>
+              <div class="msg">
+                <div class="text">Messagem *</div>
+                <input type="email" required="" style="color: white" />
+              </div>
+
+              <div class="btn">
+                <button style="color: white; font-size: large" class="submit">
+                  <spna class="preto">Enviar</spna>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,12 +1,12 @@
-window.onload = async function () {
-  let paints = await fetch("../json/paints.json")
-    .then((response) => response.text())
-    .then((data) => {
-      return data;
-    });
-  paints = JSON.parse(paints);
-  paints = paints.paints;
+const { client } = require("./client.js");
+const { paints } = require("../json/paints.json");
 
+global.apagar = function (position) {
+  new client().removePaint(position);
+  location.reload();
+};
+
+window.onload = function () {
   const paintings = new client().getArrPaints();
   const p = document.getElementById("p");
   let pstring = "";
@@ -39,38 +39,3 @@ window.onload = async function () {
     300 + 200 * paintings.length
   }px`;
 };
-
-function apagar(position) {
-  new client().removePaint(position);
-  location.reload();
-}
-
-class client {
-  constructor() {
-    if (localStorage.getItem("arrPaints")) {
-      this.arrPaints = JSON.parse(localStorage.getItem("arrPaints"));
-    } else {
-      localStorage.setItem("arrPaints", JSON.stringify([]));
-      this.arrPaints = [];
-    }
-  }
-
-  addPaint(key) {
-    this.arrPaints.push(key);
-    localStorage.setItem("arrPaints", JSON.stringify(this.arrPaints));
-  }
-
-  removePaint(key) {
-    const index = this.arrPaints.indexOf(key);
-    console.log(index);
-    if (index == -1) {
-      return null;
-    }
-    this.arrPaints.splice(index, 1);
-    localStorage.setItem("arrPaints", JSON.stringify(this.arrPaints));
-  }
-
-  getArrPaints() {
-    return (this.arrPaints = JSON.parse(localStorage.getItem("arrPaints")));
-  }
-}

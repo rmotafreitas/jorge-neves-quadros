@@ -1,3 +1,4 @@
+//!const { paints } = require("../json/paints.json");
 window.onload = async function () {
   let paints = await fetch("../json/paints.json")
     .then((response) => response.text())

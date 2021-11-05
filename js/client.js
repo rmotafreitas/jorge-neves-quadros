@@ -14,7 +14,8 @@ class client {
   }
 
   removePaint(key) {
-    const index = this.arrPaints.indexOf(key.toString());
+    const index = this.arrPaints.indexOf(key);
+    console.log(index);
     if (index == -1) {
       return null;
     }
@@ -26,3 +27,7 @@ class client {
     return (this.arrPaints = JSON.parse(localStorage.getItem("arrPaints")));
   }
 }
+
+module.exports = {
+  client,
+};
