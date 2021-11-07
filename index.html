@@ -1,37 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>Jorge Neves</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/preloader.css" />
+
     <link rel="stylesheet" href="css/footer.css" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/preloader.js"></script>
-  </head>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
   <body>
     <div class="about-wrapper">
       <div class="about-left">
+        <div class="about-leftytext">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            nulla veniam recusandae nam sint, et doloremque sunt natus adipisci
+            harum eaque obcaecati voluptate dignissimos quam! Voluptatem quas
+            eveniet corporis molestias consequatur laboriosam natus itaque
+            repudiandae quam provident a perferendis dicta, totam eos harum
+            incidunt aperiam rerum nihil facere tenetur? Possimus, temporibus
+            doloremque. Ipsam similique nihil ea recusandae voluptate ducimus
+            unde sed fuga debitis voluptates ab impedit, odit pariatur voluptas
+            tempora odio corporis quis magnam tempore fugit, sint veniam
+            assumenda consectetur? Modi sunt accusantium dolore repellendus
+            cupiditate eaque id perspiciatis obcaecati. Quibusdam perspiciatis
+            vero vitae, quod accusantium similique. Excepturi, hic iste!
+          </p>
+        </div>
         <div class="about-left-content">
           <div>
             <div class="shadow">
@@ -39,7 +57,6 @@
                 <img src="Images/JorgeNeves.png" alt="about image" />
               </div>
             </div>
-
             <h2>Jorge<br />Neves</h2>
             <h3>Pintor</h3>
           </div>
@@ -47,6 +64,7 @@
           <ul class="icons">
             <li>
               <a
+                style="list-style: none"
                 href="https://pt-pt.facebook.com/casadosneves.porto"
                 target="_blank"
                 ><i class="fab fa-facebook-f"></i
@@ -69,112 +87,41 @@
       </div>
 
       <div class="about-right">
-        <h1>Olá!</h1>
-        <h2>Quem sou eu? O que faço?</h2>
-        <div class="about-btns">
-          <button
-            type="button"
-            class="btn1 btn-white"
-            onclick="window.location.href='HTML/paintings.html'"
-          >
-            Ver Quadros
-          </button>
-        </div>
+        <div class="B">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="Images/Equilibrio.jpg" class="pogImg" />
+            </div>
 
-        <div class="about-para">
-          <p>
-            Jorge Neves, nasceu no Porto em 10 de Fevereiro de 1939. Começou
-            como empregado de balcão e, aos 27 anos montou o seu próprio
-            negócio, tornando- se num comerciante de referência na área do
-            pronto a vestir. A moda, o vitrinismo e a arte de criar sempre foram
-            as suas paixões.
-          </p>
-          <p>
-            Com 2 dos seus 4 filhos a darem continuidade ao negócio decidiu
-            seguir o seu coração e dedicou-se à arte da pintura. Sendo
-            verdadeiramente a sua grande paixão, começou a criar obras que desde
-            logo se distinguiram pela sua originalidade.
-          </p>
+            <div class="mySlides fade">
+              <img src="Images/ExplosaodeSabores.jpg" class="pogImg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="Images/Sevilha.jpg" class="pogImg" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div id="particles-js"></div>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/particles.js"></script>
-    <script src="./js/app.js"></script>
 
-    <div class="push"></div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
 
-    <footer id="contactos" style="margin-top: 0px">
-      <div class="main-content">
-        <div class="left box">
-          <h2>Sobre nós</h2>
-          <div class="content">
-            <p>
-              A Casa dos Neves nasceu no Porto em 1965. Hoje tem duas lojas no
-              coração da cidade invicta com multimarcas nacionais e
-              internacionais para homem e senhora.
-            </p>
-            <div class="social">
-              <a
-                href="https://pt-pt.facebook.com/casadosneves.porto"
-                target="_blank"
-                ><span class="fab fa-facebook-f"></span
-              ></a>
-              <a href="https://casadosneves.com/" target="_blank"
-                ><span class="fas fa-globe"></span
-              ></a>
-              <a
-                href="https://www.instagram.com/casadosneves_porto/"
-                target="_blank"
-                ><span class="fab fa-instagram"></span
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="center box">
-          <h2>Localização</h2>
-          <div class="content">
-            <div class="place">
-              <span class="fas fa-map-marker-alt"></span>
-              <span class="text">Portugal, Porto</span>
-            </div>
-            <div class="phone">
-              <span class="fas fa-phone-alt"></span>
-              <span class="text">351 222 010 507</span>
-            </div>
-            <div class="email">
-              <span class="fas fa-envelope"></span>
-              <span class="text">casadosneves@mail.telepac.pt</span>
-            </div>
-          </div>
-        </div>
-        <div class="right box">
-          <h2>Contacto-nos</h2>
-          <div class="content">
-            <form action="mailto:casadosneves@mail.telepac.pt">
-              <div class="email">
-                <div class="text">Email *</div>
-                <input type="email" required="" style="color: white" />
-              </div>
-              <div class="msg">
-                <div class="text">Nome *</div>
-                <input type="email" required="" style="color: white" />
-              </div>
-              <div class="msg">
-                <div class="text">Messagem *</div>
-                <input type="email" required="" style="color: white" />
-              </div>
-
-              <div class="btn">
-                <button style="color: white; font-size: large" class="submit">
-                  <spna class="preto">Enviar</spna>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </footer>
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
   </body>
 </html>

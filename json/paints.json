@@ -2,64 +2,81 @@
   "paints": [
     {
       "name": "Explosão De Sabores",
-      "dimension": "60x50",
-      "price": 250,
-      "img": "../Images/Sevilha.jpeg"
+      "dimension": "70x50",
+      "price": 275,
+      "img": "../Images/ExplosaoDeSabores.jpg",
+      "arrImg": [
+        "../Images/ExplosaoDeSabores.jpg",
+        "../Images/ExplosaoDeSabores1.jpg"
+      ]
     },
     {
       "name": "Caminhos Cruzados",
       "dimension": "60x40",
-      "price": 200,
-      "img": "../Images/CaminhosCruzados.jpeg"
+      "price": 225,
+      "img": "../Images/CaminhosCruzados.jpg",
+      "arrImg": [
+        "../Images/CaminhosCruzados.jpg",
+        "../Images/CaminhosCruzados1.jpg",
+        "../Images/CaminhosCruzados2.jpg"
+      ]
     },
     {
       "name": "Liberdade",
-      "dimension": "70x50",
-      "price": 250,
-      "img": "../Images/ExplosaoDeSabores.jpeg"
+      "dimension": "60x50",
+      "price": 275,
+      "img": "../Images/Liberdade.jpg",
+      "arrImg": ["../Images/Liberdade.jpg", "../Images/Liberdade1.jpg"]
     },
     {
       "name": "Urbano II",
       "dimension": "120x120",
-      "price": 380,
-      "img": "../Images/UrbanoI.jpeg"
+      "price": 405,
+      "img": "../Images/UrbanoII.jpg",
+      "arrImg": ["../Images/UrbanoII.jpg", "../Images/UrbanoII1.jpg"]
     },
     {
       "name": "Equilibrio",
       "dimension": "60x40",
-      "price": 180,
-      "img": "../Images/Equilibrio.jpeg"
+      "price": 205,
+      "img": "../Images/Equilibrio.jpg",
+      "arrImg": ["../Images/Equilibrio.jpg", "../Images/Equilibrio1.jpg"]
     },
     {
       "name": "Paixão Segundo",
       "dimension": "60x50",
-      "price": 250,
-      "img": "../Images/PaixaoSegundo.jpeg"
+      "price": 275,
+      "img": "../Images/PaixaoSegundo.jpg",
+      "arrImg": ["../Images/PaixaoSegundo.jpg", "../Images/PaixaoSegundo1.jpg"]
     },
     {
       "name": "Urbano I",
       "dimension": "120x120",
-      "price": 380,
-      "img": "../Images/UrbanoII.jpeg"
+      "price": 405,
+      "img": "../Images/UrbanoI.jpg",
+      "arrImg": ["../Images/UrbanoI.jpg", "../Images/UrbanoI1.jpg"]
     },
 
     {
       "name": "Sevilha",
       "dimension": "60x50",
-      "price": 250,
-      "img": "../Images/Liberdade.jpeg"
+      "price": 275,
+      "img": "../Images/Sevilha.jpg",
+      "arrImg": ["../Images/Sevilha.jpg", "../Images/Sevilha1.jpg"]
     },
     {
       "name": "Do Outro Lado",
       "dimension": "150x60",
-      "price": 300,
-      "img": "../Images/DoOutroLado.jpeg"
+      "price": 325,
+      "img": "../Images/DoOutroLado.jpg",
+      "arrImg": ["../Images/DoOutroLado.jpg", "../Images/DoOutroLado1.jpg"]
     },
     {
       "name": "As Cataratas",
       "dimension": "100x25",
-      "price": 200,
-      "img": "../Images/AsCataratas.jpeg"
+      "price": 225,
+      "img": "../Images/AsCataratas.jpg",
+      "arrImg": ["../Images/AsCataratas.jpg", "../Images/AsCataratas1.jpg"]
     }
   ]
 }
