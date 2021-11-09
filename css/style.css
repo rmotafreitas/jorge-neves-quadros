@@ -206,11 +206,9 @@ body {
   justify-content: center;
 }
 .about-leftytext p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
   padding: 120px;
-  margin: ;
+  margin-right: 20px;
 }
 
 .about-left h1 {
