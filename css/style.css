@@ -196,6 +196,13 @@ body {
   left: 0;
 }
 
+@media screen and (min-width: 992px) {
+  .about-leftytext p {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+}
+
 .about-leftytext {
   height: 100vh;
   justify-content: center;
@@ -206,9 +213,8 @@ body {
   justify-content: center;
 }
 .about-leftytext p {
-  position: absolute;
-  padding: 120px;
-  margin-right: 20px;
+  padding: 100px;
+  margin-right: 40px;
 }
 
 .about-left h1 {
