@@ -1,7 +1,5 @@
-//const { paints } = require("../json/paints.json");
-
 window.onload = async function () {
-  //?Require paints
+  //?Require paints from json file
   let paints = await fetch("../json/paints.json")
     .then((response) => response.text())
     .then((data) => {
@@ -10,23 +8,29 @@ window.onload = async function () {
   paints = JSON.parse(paints);
   paints = paints.paints;
 
+  //?Initialize _$GET system in js
   var parts = window.location.search.substr(1).split("&");
   var $_GET = {};
   for (var i = 0; i < parts.length; i++) {
     var temp = parts[i].split("=");
     $_GET[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
   }
-  var paintID = $_GET["id"];
-  const ProductImg = document.getElementById("ProductImg");
-  ProductImg.src = paints[paintID].img;
 
+  //?Get the info from the "Database.json" about the paint, passed by reference ID in _$GET
+  const paintID = $_GET["id"];
+  const paint = paints[paintID];
+
+  //? Put the primary paint image
+  const ProductImg = document.getElementById("ProductImg");
+  ProductImg.src = paint.img;
+
+  //? Put the other mini images
   const imgs = document.getElementById("imgs");
   let strImgs = "";
-
-  for (i = 0; i < paints[paintID].arrImg.length; i++) {
+  for (i = 0; i < paint.arrImg.length; i++) {
     strImgs += `<div class="small-img-col">
     <img
-      src="${paints[paintID].arrImg[i]}"
+      src="${paint.arrImg[i]}"
       alt=""
       width="100%"
       class="small-img"
@@ -34,7 +38,9 @@ window.onload = async function () {
   </div>`;
   }
   imgs.innerHTML = strImgs;
-  document.getElementById("nameP").innerHTML = paints[paintID].name;
-  document.getElementById("nameH").innerHTML = paints[paintID].name;
-  document.getElementById("price").innerHTML = paints[paintID].price;
+
+  //?Update the info on the side
+  document.getElementById("nameP").innerHTML = paint.name;
+  document.getElementById("nameH").innerHTML = paint.name;
+  document.getElementById("price").innerHTML = paint.price;
 };
