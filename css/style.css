@@ -198,14 +198,18 @@ body {
 
 .about-leftytext {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: justify;
-  margin-right: 2px;
-  margin-left: 50px;
   align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-leftytext p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .about-left h1 {

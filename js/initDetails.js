@@ -43,4 +43,6 @@ window.onload = async function () {
   document.getElementById("nameP").innerHTML = paint.name;
   document.getElementById("nameH").innerHTML = paint.name;
   document.getElementById("price").innerHTML = paint.price;
+  document.getElementById("width").innerHTML = paint.size.width;
+  document.getElementById("height").innerHTML = paint.size.height;
 };
