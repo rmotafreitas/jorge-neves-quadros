@@ -20,7 +20,7 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="css/slideshow.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -87,21 +87,51 @@
       </div>
 
       <div class="about-right">
-        <div class="B">
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img src="Images/Equilibrio.jpg" class="pogImg" />
+        <!--image slider start-->
+        <div class="slider">
+          <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+              <img src="Images/Liberdade.jpg" alt="" />
             </div>
-
-            <div class="mySlides fade">
-              <img src="Images/ExplosaodeSabores.jpg" class="pogImg" />
+            <div class="slide">
+              <img src="Images/UrbanoI.jpg" alt="" />
             </div>
-
-            <div class="mySlides fade">
-              <img src="Images/Sevilha.jpg" class="pogImg" />
+            <div class="slide">
+              <img src="Images/PaixaoSegundo.jpg" alt="" />
             </div>
+            <div class="slide">
+              <img src="Images/Sevilha.jpg" alt="" />
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation end-->
           </div>
         </div>
+        <!--image slider end-->
+
+        <script type="text/javascript">
+          var counter = 1;
+          setInterval(function () {
+            document.getElementById("radio" + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+              counter = 1;
+            }
+          }, 5000);
+        </script>
       </div>
     </div>
 

@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/details.css" />
+    <script src="../js/initDetails.js"></script>
     <title>Nilara | E-commerce Website</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap"
@@ -19,91 +19,26 @@
     <div class="small-container single-product">
       <div class="row">
         <div class="col-2">
-          <img src="images/gal1.png" alt="" width="100%" id="ProductImg" />
-
-          <div class="small-img-row">
-            <div class="small-img-col">
-              <img
-                src="images/gal1.png"
-                alt=""
-                width="100%"
-                class="small-img"
-              />
-            </div>
-            <div class="small-img-col">
-              <img
-                src="images/gal2.png"
-                alt=""
-                width="100%"
-                class="small-img"
-              />
-            </div>
-            <div class="small-img-col">
-              <img
-                src="images/gal3.png"
-                alt=""
-                width="100%"
-                class="small-img"
-              />
-            </div>
-            <div class="small-img-col">
-              <img
-                src="images/gal4.png"
-                alt=""
-                width="100%"
-                class="small-img"
-              />
-            </div>
-          </div>
+          <img src="" alt="" width="100%" id="ProductImg" />
+          <div class="small-img-row" id="imgs"></div>
         </div>
         <div class="col-2">
-          <p>Home / SweatShirt</p>
-          <h1>Cavaliers SweatShirt by Nike</h1>
-          <h4>Rs.3695</h4>
+          <p>Home / <span id="nameP"></span></p>
+          <h1 id="nameH"></h1>
+          <h4>Preço: <span id="price"></span>€</h4>
 
           <h3>Product Details <i class="fa fa-indent"></i></h3>
-          <br />
+
           <p>
-            Cleveland Cavaliers Nike Spotlight Men's NBA Hoodie PLAY WITH PRIDE.
-            Cleveland Cavaliers Nike Spotlight Men's NBA Hoodie keeps you
-            feeling comfortable and agile on the practice court. Inspired by the
-            authentic, on-court NBA warm-up, this pullover is made from durable
-            knit fabric that's powered by sweat-wicking Dri-FIT technology.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+            porro, quidem eaque ducimus sapiente sequi exercitationem.
+            Inventore, voluptates dolores! Veniam vel pariatur deserunt eveniet?
+            Tempora maiores esse nam, deleniti iusto sed veritatis deserunt eum
+            rerum numquam officiis mollitia at impedit voluptates magni dolores,
+            nisi ipsam perspiciatis nostrum. Deleniti, architecto doloribus.
           </p>
         </div>
       </div>
     </div>
-
-    <script>
-      var MenuItems = document.getElementById("MenuItems");
-
-      MenuItems.style.maxHeight = "0px";
-
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
-        } else {
-          MenuItems.style.maxHeight = "0px";
-        }
-      }
-    </script>
-
-    <script>
-      var ProductImg = document.getElementById("ProductImg");
-      var SmallImg = document.getElementsByClassName("small-img");
-
-      SmallImg[0].onclick = function () {
-        ProductImg.src = SmallImg[0].src;
-      };
-      SmallImg[1].onclick = function () {
-        ProductImg.src = SmallImg[1].src;
-      };
-      SmallImg[2].onclick = function () {
-        ProductImg.src = SmallImg[2].src;
-      };
-      SmallImg[3].onclick = function () {
-        ProductImg.src = SmallImg[3].src;
-      };
-    </script>
   </body>
 </html>
