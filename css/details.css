@@ -113,6 +113,9 @@ small {
   margin-top: 80px;
 }
 .single-product .col-2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
   padding: 0;
 }
 .single-product .col-2 {
@@ -155,4 +158,8 @@ small {
     font-size: 26px;
     line-height: 32px;
   }
+}
+
+.small-img:hover {
+  transition: 0.5s ease;
 }

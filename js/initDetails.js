@@ -34,6 +34,7 @@ window.onload = async function () {
       alt=""
       width="100%"
       class="small-img"
+      onclick="{ProductImg.src = this.src}"
     />
   </div>`;
   }

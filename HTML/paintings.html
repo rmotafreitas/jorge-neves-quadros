@@ -25,55 +25,40 @@
   <body>
     <header>
       <nav>
-        <a class="logo" href="../index.html">Casa dos Neves</a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li>
-            <a href="./paintings.html"> <span>Quadros</span> </a>
-          </li>
-          <li>
-            <a href="./about-me.html"><span>Sobre nós</span></a>
-          </li>
-          <li>
-            <a href="./cart.html"><span>Carrinho</span></a>
-          </li>
-        </ul>
+        <a class="logo" href="../index.html">NevesGallery</a>
       </nav>
     </header>
     <div class="about-wrapper">
       <section class="items">
-        <h1 style="margin: 25px">Quadros</h1>
+        <h1 style="margin-bottom: 25px"></h1>
         <div class="row">
           <div class="col2">
-            <img class="header-img" src="" />
+            <img class="header-img" src="../Images/back.jpg" />
             <div class="items2" id="items2"></div>
           </div>
         </div>
       </section>
     </div>
-    <footer id="contactos">
+    <footer id="contacte-nos">
       <div class="main-content">
         <div class="left box">
           <h2>Sobre nós</h2>
           <div class="content">
             <p>
-              A Casa dos Neves nasceu no Porto em 1965. Hoje tem duas lojas no
-              coração da cidade invicta com multimarcas nacionais e
-              internacionais para homem e senhora.
+              Os quadros do artista Jorge neves estarão em exposição nas
+              instalações da RFA. Para mais informações sobre consulte o nosso
+              site e redes sociais.
             </p>
             <div class="social">
-              <a href="https://pt-pt.facebook.com/casadosneves.porto"
+              <a href="https://pt-pt.facebook.com/pg/RFA.PT/posts/"
                 ><span class="fab fa-facebook-f"></span
               ></a>
-              <a href="https://casadosneves.com/"
+              <a href="https://www.rfaacademy.com/"
                 ><span class="fas fa-globe"></span
               ></a>
-              <a href="https://www.instagram.com/casadosneves_porto/"
-                ><span class="fab fa-instagram"></span
+              <a
+                href="https://pt.linkedin.com/company/rfa-academy---rfaconsulting"
+                ><span class="fab fa-linkedin"></span
               ></a>
             </div>
           </div>
@@ -83,38 +68,45 @@
           <div class="content">
             <div class="place">
               <span class="fas fa-map-marker-alt"></span>
-              <span class="text">Portugal, Porto</span>
+              <span class="text"
+                >R. Parque da República 122, 4430-145 Vila Nova de Gaia</span
+              >
             </div>
             <div class="phone">
               <span class="fas fa-phone-alt"></span>
-              <span class="text">351 222 010 507</span>
+              <span class="text">22 712 4602</span>
             </div>
             <div class="email">
               <span class="fas fa-envelope"></span>
-              <span class="text">casadosneves@mail.telepac.pt</span>
+              <span class="text">geral@rfaracademy.com</span>
             </div>
           </div>
         </div>
         <div class="right box">
-          <h2>Contacto-nos</h2>
+          <h2>Contacte-nos</h2>
           <div class="content">
-            <form action="mailto:casadosneves@mail.telepac.pt">
-              <div class="email">
-                <div class="text">Email *</div>
-                <input type="email" required="" style="color: white" />
-              </div>
+            <form onsubmit="sendEmail();return false;">
               <div class="msg">
                 <div class="text">Nome *</div>
-                <input type="email" required="" style="color: white" />
+                <input type="text" required="" id="name" style="color: white" />
               </div>
               <div class="msg">
                 <div class="text">Messagem *</div>
-                <input type="email" required="" style="color: white" />
+                <textarea
+                  cols="40"
+                  required=""
+                  rows="3"
+                  style="color: white; resize: none"
+                  id="body"
+                ></textarea>
               </div>
 
               <div class="btn">
-                <button style="color: white; font-size: large" class="submit">
-                  <spna class="preto">Enviar</spna>
+                <button
+                  style="color: white; font-size: large; margin-right: 10px"
+                  class="submit"
+                >
+                  <spna class="preto" type="submit">Enviar</spna>
                 </button>
               </div>
             </form>
@@ -122,5 +114,15 @@
         </div>
       </div>
     </footer>
+    <script>
+      function sendEmail() {
+        const name = document.getElementById("name").value;
+        const body = document.getElementById("body").value;
+        const strBody = `${body}%0D%0A%0D%0A De:${name}`;
+        window.open(
+          `mailto:geral@rfaracademy.com?subject=NevesGallery&body=${strBody}`
+        );
+      }
+    </script>
   </body>
 </html>

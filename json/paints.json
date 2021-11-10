@@ -8,7 +8,10 @@
       },
       "price": 275,
       "img": "../Images/ExplosaoDeSabores.jpeg",
-      "arrImg": ["../Images/ExplosaoDeSabores1.jpg"]
+      "arrImg": [
+        "../Images/ExplosaoDeSabores.jpeg",
+        "../Images/ExplosaoDeSabores1.jpg"
+      ]
     },
     {
       "name": "Caminhos Cruzados",
@@ -19,6 +22,7 @@
       "price": 225,
       "img": "../Images/CaminhosCruzados.jpeg",
       "arrImg": [
+        "../Images/CaminhosCruzados.jpeg",
         "../Images/CaminhosCruzados1.jpg",
         "../Images/CaminhosCruzados2.jpg"
       ]
@@ -31,7 +35,7 @@
       },
       "price": 275,
       "img": "../Images/Liberdade.jpeg",
-      "arrImg": ["../Images/Liberdade1.jpg"]
+      "arrImg": ["../Images/Liberdade.jpeg", "../Images/Liberdade1.jpg"]
     },
     {
       "name": "Urbano II",
@@ -41,7 +45,7 @@
       },
       "price": 405,
       "img": "../Images/UrbanoII.jpeg",
-      "arrImg": ["../Images/UrbanoII1.jpg"]
+      "arrImg": ["../Images/UrbanoII.jpeg", "../Images/UrbanoII1.jpg"]
     },
     {
       "name": "Equilibrio",
@@ -51,7 +55,7 @@
       },
       "price": 205,
       "img": "../Images/Equilibrio.jpeg",
-      "arrImg": ["../Images/Equilibrio1.jpg"]
+      "arrImg": ["../Images/Equilibrio.jpeg", "../Images/Equilibrio1.jpg"]
     },
     {
       "name": "Paixão Segundo",
@@ -61,7 +65,7 @@
       },
       "price": 275,
       "img": "../Images/PaixaoSegundo.jpeg",
-      "arrImg": ["../Images/PaixaoSegundo1.jpg"]
+      "arrImg": ["../Images/PaixaoSegundo.jpeg", "../Images/PaixaoSegundo1.jpg"]
     },
     {
       "name": "Urbano I",
@@ -71,7 +75,7 @@
       },
       "price": 405,
       "img": "../Images/UrbanoI.jpeg",
-      "arrImg": ["../Images/UrbanoI1.jpg"]
+      "arrImg": ["../Images/UrbanoI.jpeg", "../Images/UrbanoI1.jpg"]
     },
 
     {
@@ -82,7 +86,7 @@
       },
       "price": 275,
       "img": "../Images/Sevilha.jpeg",
-      "arrImg": ["../Images/Sevilha1.jpg"]
+      "arrImg": ["../Images/Sevilha.jpeg", "../Images/Sevilha1.jpg"]
     },
     {
       "name": "Do Outro Lado",
@@ -92,7 +96,7 @@
       },
       "price": 325,
       "img": "../Images/DoOutroLado.jpeg",
-      "arrImg": ["../Images/DoOutroLado1.jpg"]
+      "arrImg": ["../Images/DoOutroLado.jpeg", "../Images/DoOutroLado1.jpg"]
     },
     {
       "name": "As Cataratas",
@@ -102,7 +106,7 @@
       },
       "price": 225,
       "img": "../Images/AsCataratas.jpeg",
-      "arrImg": ["../Images/AsCataratas1.jpg"]
+      "arrImg": ["../Images/AsCataratas.jpeg", "../Images/AsCataratas1.jpg"]
     }
   ]
 }
