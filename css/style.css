@@ -13,7 +13,7 @@ body {
 }
 
 .about-right-content > div {
-  background: #d98b19;
+  background: #aa7501;
   padding: 2rem 2rem 1.25rem 2rem;
   text-align: center;
 }
@@ -116,7 +116,7 @@ body {
 
 .about-right {
   /*height: 100vh;*/
-  background: #e79f31;
+  background: #d98b19;
   display: flex;
   flex-direction: column;
   align-items: center;

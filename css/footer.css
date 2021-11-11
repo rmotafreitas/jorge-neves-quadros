@@ -1,8 +1,8 @@
 footer {
-  border-top: 10px solid#5a5a5a;
+  border-top: 10px solid#aa7501;
   bottom: -2px;
   width: 100%;
-  background: #111;
+  background: #d98b19;
 }
 @media screen and (max-width: 992px) {
   .push {
@@ -33,14 +33,14 @@ footer {
   top: -10px;
   height: 2px;
   width: 100%;
-  background: #1a1a1a;
+  background: #aa7501;
 }
 .box .content:after {
   position: absolute;
   content: "";
   height: 2px;
   width: 15%;
-  background: #5a5a5a;
+  background: #aa7501;
   top: -10px;
 }
 .left .content p {
@@ -57,7 +57,7 @@ footer {
 .left .content .social a span {
   height: 40px;
   width: 40px;
-  background: #1a1a1a;
+  background: #aa7501;
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -69,7 +69,7 @@ footer {
 }
 .center .content .fas {
   font-size: 1.4375rem;
-  background: #1a1a1a;
+  background: #aa7501;
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -92,7 +92,7 @@ footer {
 .right form .text {
   font-size: 1.0625rem;
   margin-bottom: 2px;
-  color: #656565;
+  color: #ffffff;
 }
 .right form .msg {
   margin-top: 10px;
@@ -101,9 +101,9 @@ footer {
 .right form textarea {
   width: 100%;
   font-size: 1.0625rem;
-  background: #151515;
+  background: #aa7501;
   padding-left: 10px;
-  border: 1px solid #222222;
+  border: 1px solid #ffffff;
 }
 .right form input:focus,
 .right form textarea:focus {
@@ -158,10 +158,10 @@ footer {
 .bottom center {
   padding: 5px;
   font-size: 0.9375rem;
-  background: #151515;
+  background: #aa7501;
 }
 .bottom center span {
-  color: #656565;
+  color: #aa7501;
 }
 .bottom center a {
   color: #f12020;

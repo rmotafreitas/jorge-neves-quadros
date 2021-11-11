@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-span {
-  font-size: 30px;
-}
-
 a {
   color: #fff;
   text-decoration: none;
@@ -28,7 +24,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #23232e;
+  background: #aa7501;
   height: 8vh;
 }
 
